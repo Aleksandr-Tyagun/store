@@ -1,0 +1,20 @@
+.header {
+    &__logo {
+        margin-top: 21px;
+        margin-bottom: 60px;
+    }
+
+    &__list {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        list-style: none;
+    }
+
+    &__item {
+        &--card {
+            position: absolute;
+            right: 0;
+        }
+    }
+}
