@@ -11,7 +11,7 @@
     {
         "id": 1,
         "title":  "Рубашка с принтом",
-        "imageUrl": "img/products/1.png",
+        "imageUrl": "img/products/2.png",
         "category": "shirts",
         "price": 170,
         "available": 11,
@@ -20,7 +20,7 @@
     {
         "id": 2,
         "title":  "Кроссовки «Kaiwa» Y3 x Adidas",
-        "imageUrl": "img/products/1.png",
+        "imageUrl": "img/products/3.png",
         "category": "snickers",
         "price": 240,
         "available": 134,
@@ -29,7 +29,7 @@
     {
         "id": 3,
         "title":  "Куртка-рубашка с карманами",
-        "imageUrl": "img/products/1.png",
+        "imageUrl": "img/products/4.png",
         "category": "shirts",
         "price": 1240,
         "available": 11,
@@ -38,7 +38,7 @@
     {
         "id": 4,
         "title":  "Кроссовки с пряжками",
-        "imageUrl": "img/products/1.png",
+        "imageUrl": "img/products/5.png",
         "category": "snickers",
         "price": 390,
         "available": 11,
@@ -47,7 +47,7 @@
     {
         "id": 5,
         "title":  "Укороченные зауженные брюки",
-        "imageUrl": "img/products/1.png",
+        "imageUrl": "img/products/6.png",
         "category": "shirts",
         "price": 647,
         "available": 7,
