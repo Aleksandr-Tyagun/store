@@ -3,54 +3,66 @@
         "id": 0,
         "title":  "Рубашка на пуговицах",
         "imageUrl": "img/products/1.png",
-        "category": "shirts",
+        "category": "Рубашки",
         "price": 320,
         "available": 20,
-        "slug": "pubashka-na-pugovicah"
+        "slug": "pubashka-na-pugovicah",
+        "reviews": 300,
+        "date": "June 1, 2020"
     },
     {
         "id": 1,
         "title":  "Рубашка с принтом",
         "imageUrl": "img/products/2.png",
-        "category": "shirts",
+        "category": "Рубашки",
         "price": 170,
         "available": 11,
-        "slug": "rubashka-s-printom"
+        "slug": "rubashka-s-printom",
+        "reviews": 200,
+        "date": "June 4, 2020"
     },
     {
         "id": 2,
         "title":  "Кроссовки «Kaiwa» Y3 x Adidas",
         "imageUrl": "img/products/3.png",
-        "category": "snickers",
+        "category": "Обувь",
         "price": 240,
         "available": 134,
-        "slug": "krossovki-kaiwa-y3-x-adidas"
+        "slug": "krossovki-kaiwa-y3-x-adidas",
+        "reviews": 150,
+        "date": "June 8, 2020"
     },
     {
         "id": 3,
         "title":  "Куртка-рубашка с карманами",
         "imageUrl": "img/products/4.png",
-        "category": "shirts",
+        "category": "Рубашки",
         "price": 1240,
         "available": 11,
-        "slug": "kurtka-rubashka-s-karmanami"
+        "slug": "kurtka-rubashka-s-karmanami",
+        "reviews": 120,
+        "date": "June 17, 2020"
     },
     {
         "id": 4,
         "title":  "Кроссовки с пряжками",
         "imageUrl": "img/products/5.png",
-        "category": "snickers",
+        "category": "Обувь",
         "price": 390,
         "available": 11,
-        "slug": "krossovki-s-prjazhkami"
+        "slug": "krossovki-s-prjazhkami",
+        "reviews": 78,
+        "date": "June 24, 2020"
     },
     {
         "id": 5,
         "title":  "Укороченные зауженные брюки",
         "imageUrl": "img/products/6.png",
-        "category": "shirts",
+        "category": "Рубашки",
         "price": 647,
         "available": 7,
-        "slug": "ukorochennye-zauzhennye-brjuki"
+        "slug": "ukorochennye-zauzhennye-brjuki",
+        "reviews": 50,
+        "date": "June 30, 2020"
     }
 ]
