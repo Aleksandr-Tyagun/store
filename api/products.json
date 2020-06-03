@@ -8,7 +8,8 @@
         "available": 20,
         "slug": "pubashka-na-pugovicah",
         "reviews": 300,
-        "date": "June 1, 2020"
+        "date": "June 1, 2020",
+        "sizes": ["S", "M", "L", "XL"]
     },
     {
         "id": 1,
@@ -19,7 +20,8 @@
         "available": 11,
         "slug": "rubashka-s-printom",
         "reviews": 200,
-        "date": "June 4, 2020"
+        "date": "June 4, 2020",
+        "sizes": ["S", "M", "L", "XL"]
     },
     {
         "id": 2,
@@ -30,7 +32,8 @@
         "available": 134,
         "slug": "krossovki-kaiwa-y3-x-adidas",
         "reviews": 740,
-        "date": "June 8, 2020"
+        "date": "June 8, 2020",
+        "sizes": ["S", "M", "L", "XL"]
     },
     {
         "id": 3,
@@ -41,7 +44,8 @@
         "available": 11,
         "slug": "kurtka-rubashka-s-karmanami",
         "reviews": 550,
-        "date": "June 17, 2020"
+        "date": "June 17, 2020",
+        "sizes": ["S", "M", "L", "XL"]
     },
     {
         "id": 4,
@@ -52,7 +56,8 @@
         "available": 11,
         "slug": "krossovki-s-prjazhkami",
         "reviews": 78,
-        "date": "June 24, 2020"
+        "date": "June 24, 2020",
+        "sizes": ["S", "M", "L", "XL"]
     },
     {
         "id": 5,
@@ -63,6 +68,7 @@
         "available": 7,
         "slug": "ukorochennye-zauzhennye-brjuki",
         "reviews": 50,
-        "date": "June 30, 2020"
+        "date": "June 30, 2020",
+        "sizes": ["S", "M", "L", "XL"]
     }
 ]
