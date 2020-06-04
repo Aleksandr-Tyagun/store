@@ -6,15 +6,15 @@ import ProductsList from '../components/ProductsList';
 import Sort from '../components/Sort';
 
 const HomePage = () => {
-    return (
-        <main className="homepage">
-            <div>
-                <Navigation />
-                <Sort />
-            </div>
-            <ProductsList />
-        </main>
-    );
+  return (
+    <main className="homepage">
+      <div>
+        <Navigation />
+        <Sort />
+      </div>
+      <ProductsList />
+    </main>
+  );
 }
 
 export default HomePage;

@@ -1,0 +1,38 @@
+.carousel {
+  display: flex;
+  padding-top: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  
+  &__image {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    border: 1px solid transparent;
+    object-fit: cover;
+    cursor: pointer;
+  }
+
+  &__image--active {
+    border: 1px solid black;
+  }
+
+  &__prev-button,
+  &__next-button {
+    height: 20px;
+    width: 30px;
+    background: url("../img/arrow.svg") no-repeat;
+    background-position: center center;
+    transform: rotate(90deg);
+    cursor: pointer;
+  }
+
+  &__next-button {
+    transform: rotate(-90deg);
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}

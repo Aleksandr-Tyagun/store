@@ -1,0 +1,77 @@
+@import "../styles/variables";
+
+.product-card {
+  display: block;
+  cursor: pointer;
+  transition: box-shadow $transition-duration;
+  color: black;
+
+  &:visited {
+    color: black;
+  }
+
+  &:hover {
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.07);
+  }
+
+  &__details {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px 18px;
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__details-category {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 1px;
+    color: $secondary-color;
+  }
+
+  &__details-title {
+    margin-top: 2px;
+    font-weight: 300;
+    line-height: 19px;
+  }
+
+  &__details-price {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+
+  &__details-available {
+    margin-top: 1px;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: $secondary-color;
+  }
+
+  &__carusel {
+    position: absolute;
+    height: 50px;
+    left: 0;
+    right: 0;
+    top: -54px;
+    background-color: white;
+    transition: opacity $transition-duration;
+    opacity: 0;
+    z-index: 1;
+  }
+
+  &:hover &__carusel {
+    opacity: 1;
+  }
+}

@@ -1,8 +1,34 @@
-.navigation {
-    display: flex;
-    flex-direction: column;
+@import '../styles/variables';
 
-    &__list {
-        list-style: none;
+.navigation {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+
+  &__list {
+    list-style: none;
+    transition: color $transition-duration;
+
+    &:hover {
+      color: $secondary-color;
     }
+  }
+
+  &__item {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.67px;
+    text-transform: uppercase;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+    &--active {
+      font-weight: 500;
+    }
+
+    &:hover {
+      color: black;
+    }
+  }
 }

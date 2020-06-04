@@ -1,13 +1,19 @@
-@import './styles/reset';
-@import './styles/variables';
+@import "./styles/reset";
+@import "./styles/variables";
+@import "./styles/mixins";
+
+html {
+  @include scrollbar-style;
+}
 
 body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
 }
 
 .app {
-    max-width: 1200px;
-    margin: 0 auto;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
 }

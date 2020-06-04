@@ -1,0 +1,160 @@
+@import "../styles/variables";
+
+.product {
+  display: flex;
+  justify-content: space-between;
+
+  &__image {
+    display: block;
+    width: 40%;
+    margin-top: -125px;
+  }
+
+  &__category {
+    margin-top: 60px;
+    color: $secondary-color;
+  }
+
+  &__title {
+    margin-top: 4px;
+  }
+
+  &__actions {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+
+  &__button {
+    cursor: pointer;
+    transition: opacity $transition-duration;
+  }
+
+  &__button--back {
+    position: relative;
+    padding-left: 15px;
+    width: 50px;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.67px;
+    text-transform: uppercase;
+    color: black;
+
+    &::before {
+      content: " ";
+      position: absolute;
+      left: -10px;
+      top: -1px;
+      width: 15px;
+      height: 15px;
+      background: url("../img/arrow.svg") no-repeat;
+      transform: rotate(90deg);
+    }
+
+    &:visited {
+      color: black;
+    }
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  &__button--size {
+    padding: 22px 44px 21px 23px;
+    border: 2px solid;
+    font-weight: 500;
+    width: 150px;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: url("../img/arrow-bold.svg") no-repeat;
+    background-position: right 20px center;
+    box-sizing: border-box;
+  }
+
+  &__dropdown {
+    position: relative;
+  }
+
+  &__dropdown-list {
+    position: absolute;
+    padding: 10px 20px;
+    bottom: -160px;
+    left: 30px;
+    width: 50px;
+    font-weight: 500;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2px;
+    text-align: center;
+    transition: opacity $transition-duration, transform $transition-duration;
+    transform: translateY(-10px);
+    border: 2px solid;
+    background-color: white;
+    opacity: 0;
+  }
+
+  &__dropdown-list--active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &__dropdown-item {
+    margin: 10px 0;
+    cursor: pointer;
+  }
+
+  &__dropdown-item--active {
+    font-weight: 500;
+  }
+
+  &__buy {
+    padding: 22px 78px;
+    margin-left: 20px;
+    border: 2px solid;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: white;
+    cursor: pointer;
+  }
+
+  &__buy--disabled {
+    border-color: $secondary-color;
+    color: $secondary-color;
+    background-color: white;
+  }
+
+  &__desc {
+    margin-bottom: 40px;
+    width: 360px;
+  }
+
+  &__details {
+    display: flex;
+  }
+
+  &__properties {
+    text-align: left;
+    font-size: 10px;
+    margin-left: 104px;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 1px;
+  }
+
+  &__properties-title {
+    text-transform: uppercase;
+    color: $secondary-color;
+    margin-bottom: 9px;
+  }
+
+  &__properties-value {
+    padding-left: 38px;
+  }
+}
