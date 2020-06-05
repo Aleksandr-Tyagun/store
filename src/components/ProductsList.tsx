@@ -11,40 +11,42 @@ const ProductsList = () => {
   const sortBy = useSelector(store.getSortBy);
   const filterBy = useSelector(store.getFilterBy);
 
-  const sortedProducts = useMemo(() => {
-    let result = [...products];
+  const visibleProducts = useMemo(() => {
+    const result = products.filter(item => {
+      if(filterBy !== '' && filterBy !== CATEGORY.all) {
+        return item.category === filterBy
+      }
 
-    if(filterBy !== '' && filterBy !== CATEGORY.all) {
-      result = result.filter(item => item.category === filterBy)
-    }
+      return item
+    });
 
     switch (sortBy) {
       case SORT_BY.priceAsc:
-        return [...result]
-          .sort((a, b) => a.price - b.price)
+        return result
+          .sort((a, b) => a.price - b.price);
 
       case SORT_BY.priceDesc:
-        return [...result]
-          .sort((a, b) => b.price - a.price)
+        return result
+          .sort((a, b) => b.price - a.price);
 
       case SORT_BY.popular:
-        return [...result]
-          .sort((a, b) => b.reviews - a.reviews)
+        return result
+          .sort((a, b) => b.reviews - a.reviews);
 
       case SORT_BY.new:
-        return [...result]
-          .sort((a, b) => Date.parse(a.date) - Date.parse(b.date))
+        return result
+          .sort((a, b) => Date.parse(a.date) - Date.parse(b.date));
 
       default:
-        return result
+        return result;
     }
-  }, [sortBy, filterBy, products]);
+  }, [filterBy, sortBy, products]);
 
   return (
     <>
-      {sortedProducts.length > 0 && (
+      {visibleProducts.length > 0 && (
         <div className="products">
-          {sortedProducts.map((product: Product) => (
+          {visibleProducts.map((product: Product) => (
             <ProductCard
               key={product.id}
               product={product}
