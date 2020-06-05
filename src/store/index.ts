@@ -11,6 +11,7 @@ import errorReducer from './error';
 import cartReducer from './cart';
 import sidebarReducer from './sidebar';
 import filterReducer from './filter';
+import { CATEGORY, SORT_BY } from '../constants';
 
 const rootReducer = combineReducers({
   products: productsReducer,
@@ -42,6 +43,37 @@ export const loadProducts = () => {
     }
   };
 };
+
+export const getVisibleProducts = (state: RootState) => {
+  const visibleProducts: Product[] = state.products.filter((item: Product) => {
+    if(state.filterBy !== '' && state.filterBy !== CATEGORY.all) {
+      return item.category === state.filterBy
+    }
+
+    return item
+  });
+
+  switch (state.sortBy) {
+    case SORT_BY.priceAsc:
+      return visibleProducts
+        .sort((a, b) => a.price - b.price);
+
+    case SORT_BY.priceDesc:
+      return visibleProducts
+        .sort((a, b) => b.price - a.price);
+
+    case SORT_BY.popular:
+      return visibleProducts
+        .sort((a, b) => b.reviews - a.reviews);
+
+    case SORT_BY.new:
+      return visibleProducts
+        .sort((a, b) => Date.parse(a.date) - Date.parse(b.date));
+
+    default:
+      return visibleProducts;
+  }
+}
 
 const store = createStore(
   rootReducer,
